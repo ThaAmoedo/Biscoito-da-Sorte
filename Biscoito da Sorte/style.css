@@ -1,0 +1,183 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+font-size: 62.5%;
+
+}
+
+body {
+    background: linear-gradient(45deg, #190361, #bb00ff);
+		animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+    
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+main{
+
+   
+    text-align: center;
+    
+    padding: 4.8rem 6.4rem 6.4rem;
+    
+    
+    background: #FFFFFF;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: .5rem;
+    width: min(42.8rem, 90%);
+    margin-top: -12rem;
+
+    margin: 0 auto; /*afasta do topo*/
+
+}
+
+
+/*.screen1 button{
+    background: none;
+    border: none;
+    cursor:pointer;
+}*/
+
+/*animação biscoito*/
+.screen1 img{
+    cursor:pointer;
+    position: relative;
+}
+.screen1 img:hover {
+    animation: shake 700ms infinite;
+}
+@keyframes shake {
+  0% { left: 0; }
+  10% { left: -10px; }
+  20% { left: 10px; }
+  30% { left: -10px; }
+  40% { left: 10px; }
+  50% { left: -10px; }
+  60% { left: 10px; }
+  70% { left: -10px; }
+  80% { left: 10px; }
+  90% { left: -10px; }
+  100% { left: 0; }
+}
+
+
+
+/*animação das frases*/
+@keyframes frases {
+    from {
+        transform: translateY(15rem) scale(0);
+    }
+
+    to {
+        transform: translateY(0px) scale(1);
+    }
+}
+
+
+
+
+
+h1,p{
+    color: #34355B;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+
+    
+
+    
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 2.0rem;
+}
+
+
+.escondido{
+    display: none;
+}
+/*screen1*/
+
+
+
+/*screen2*/
+
+.screen2 h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #34355B;
+    font-size: 2.4rem;
+
+    
+}
+
+
+.screen2 button{
+    border: none;
+    padding: 1.6rem; 
+    background: #FF9500;
+    border-radius: .4rem;
+
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-family: 'DM Sans', sans-serif;
+
+    cursor:pointer;
+
+    transition: background .3s;
+
+}
+
+.screen2 p{
+    font-family: 'Dancing Script', cursive;
+    color: #000000;
+    font-size: 2.4rem;
+
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    padding: 1.0rem;
+    gap: 1.0rem;
+
+    animation: animacaoMensagem 0.5s forwards;
+
+}
+@keyframes animacaoMensagem {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.screen2 button:hover{
+    background-color: #b96f06 ; 
+
+}
